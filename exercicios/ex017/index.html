@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aninhamento com textos usando CSS</title>
+    <style>
+        body{
+        font-size: 14pt;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    
+    #Título-principal {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+    }
+    
+    .parágrafo {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    div > p {
+        display: none
+
+    }
+
+    div:hover > p {
+        display: block;
+        background-color: red;
+        width: 200px;
+    }
+
+    div:hover{
+        color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="Título-principal">Aninhamento em textos usando CSS </h1>
+
+    
+    <p class="parágrafo">Parágrafo com alinhamento padrão</p>
+    
+    <p style="text-align:right"> Parágrafo com alinhamento a direita</p>
+    
+    <p style="text-align:center">Parágrafo com alinhamento centralizado</p>
+    
+    <p style="text-align: justify">Parágrafo com alinhamento justificado.<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nihil labore blanditiis accusamus eveniet
+        beatae. Facilis voluptas veritatis sed non labore architecto quidem? Modi, ea debitis aperiam
+        nemo quaerat illo!</p>
+    
+    <h1>Conteúdo especial</h1>
+    <div>
+        Passe o mouse aqui
+        <p>Hello Mother Fucker !!!!</p>
+    </div>
+</body>
+</html>

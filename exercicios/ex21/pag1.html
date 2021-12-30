@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo básico de site</title>
+    <style>
+        body{
+            font: 1em Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+        header{
+            color: white;
+            background-color: black;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        nav{
+            background-color: darkslateblue;
+        }
+
+        nav > a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav > a:hover{
+            color: palevioletred;
+            text-decoration: underline;
+        }
+
+        main{
+            color: red;
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: chartreuse;
+        }
+        
+        article > aside{
+            background-color: rgb(4, 223, 4);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        p#pag2{
+            text-align: right;
+        }
+        p > a{
+            color: rgb(0, 255, 98);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>"Site" de teste</h1>
+        <nav><a href="#">link</a></nav>
+        <nav><a href="#">link</a></nav>
+        <nav><a href="#">link</a></nav>
+        <nav><a href="#">link</a></nav>
+        <nav><a href="#">link</a></nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+            </article>
+            <article>
+        
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+                <aside>
+                    Conteúdo periférico do artigo
+                </aside>
+            </article>
+        </section>
+        <aside>
+            conteúdo periférico do artigo
+        </aside>
+    </main>
+    <footer>
+        Desenvolvido por Alisson Dias
+    </footer>
+    <p id="pag2"><a href="pag2.html" target="_self">Visitar a página 2</a></p>
+</body>
+</html>
